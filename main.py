@@ -33,7 +33,6 @@ import brute_force_functions as bff
 import polyfit as pf
 import brute_force as bf
 import step3 as s3
-import S_NN_train as nnt
 import visualize as v
 
 vis = input("Run visualization? [y/n]: ")
