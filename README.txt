@@ -22,3 +22,6 @@ dp_data.txt: [time, x_1, y_1, x_2, y_2, theta_1, omega_1, theta_2, omega_2]
 
  Terminal input: 
  python3 main.py
+
+packages that need to be installed beforehand: 
+sympy
