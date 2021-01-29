@@ -389,15 +389,3 @@ def run_vis():
     axs[1].plot(t[10:], t_div_fe[10:], "b")
     plt.show()
 
-    fig = plt.figure()
-    ax = fig.add_subplot(111, autoscale_on=False, xlim=(-2, 2), ylim=(-2, 2))
-    ax.set_aspect('equal')
-    ax.grid()
-
-    line, = ax.plot([], [], 'o-', lw=2)
-    time_template = 'time = %.1fs'
-    time_text = ax.text(0.05, 0.9, '', transform=ax.transAxes)
-
-    ani = animation.FuncAnimation(fig, animate, range(1, len(y)),
-                                  interval=dt*1000, blit=True, init_func=init)
-    plt.show()
